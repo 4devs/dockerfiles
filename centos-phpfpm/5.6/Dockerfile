@@ -1,6 +1,7 @@
 FROM 4devs/centos
 
-ENV REMI_REPO_VERSION 'remi'
+ENV REMI_REPO_VERSION 'remi-php56'
+
 ENV PHP_TIMEZONE 'Europe/Moscow'
 
 RUN yum-config-manager --enable ${REMI_REPO_VERSION} \
