@@ -4,3 +4,5 @@ RUN yum -y --setopt=tsflags=nodocs install deltarpm vim git htop http://rpms.fam
   && yum-config-manager --enable remi \
   && yum update -y \
   && yum clean all
+
+RUN export TERM='xterm-256color'
